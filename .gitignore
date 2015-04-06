@@ -1,2 +1,3 @@
 #下面将被git忽略
 *.DS_Store
+*.class

@@ -38,6 +38,9 @@ public class MainActivity extends BaseActivity {
 		return R.id.container_id;
 	}
 	
+	/**
+	 * 打开app看到的闪屏页面，用于展示logo
+	 */
 	private void initSplashDialog(){
 		mSplashDialog = new Dialog(this, R.style.full_screen_dialog) {
 			@Override
