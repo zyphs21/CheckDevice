@@ -49,6 +49,7 @@ public class DeviceFragment extends BaseFragment{
 		mExListAdapter = new  DeviceExpandableListAdapter(this.getActivity(), mGroupDataList, mChildDataList);
 		mWrapperAdapter = new WrapperExpandableListAdapter(mExListAdapter);
 		exListView.setAdapter(mWrapperAdapter);
+		
 		exListView.setOnChildClickListener(mOnChildClickListener);
 		
 		//将expandableListview箭头移动到右边的方法，但是失效了
@@ -94,15 +95,14 @@ public class DeviceFragment extends BaseFragment{
 	}
 	
 	/**
-	 * 子项点击事件，进入到点检表
+	 * 子项点击事件，进入到对应设备的点检表
 	 */
 	FloatingGroupExpandableListView.OnChildClickListener mOnChildClickListener = 
 			new FloatingGroupExpandableListView.OnChildClickListener(){
 		@Override
-		public boolean onChildClick(ExpandableListView parent, View v,
-				int groupPosition, int childPosition, long id) {
+		public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
 			
-//			getCurrentActivity().addFragment(new RegistryDetailFragment());
+			getCurrentActivity().addFragment(DeviceCheckInfoFragment.getDeviceCheckInfoFragment( mChilds[groupPosition][childPosition] ));
 			return false; 
 		}
 	};

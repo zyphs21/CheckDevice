@@ -351,6 +351,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
          */
         public static final int activity_horizontal_margin=0x7f08000d;
         public static final int activity_vertical_margin=0x7f08000e;
+        public static final int check_device_name=0x7f080010;
+        public static final int check_info_text=0x7f08000f;
         public static final int default_circle_indicator_radius=0x7f080000;
         public static final int default_circle_indicator_stroke_width=0x7f080001;
         public static final int default_line_indicator_gap_width=0x7f080003;
@@ -366,37 +368,44 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int default_title_indicator_top_padding=0x7f08000c;
     }
     public static final class drawable {
-        public static final int empty_photo=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int selector_group=0x7f020002;
-        public static final int selector_item=0x7f020003;
-        public static final int splashpage=0x7f020004;
-        public static final int vpi__tab_indicator=0x7f020005;
-        public static final int vpi__tab_selected_focused_holo=0x7f020006;
-        public static final int vpi__tab_selected_holo=0x7f020007;
-        public static final int vpi__tab_selected_pressed_holo=0x7f020008;
-        public static final int vpi__tab_unselected_focused_holo=0x7f020009;
-        public static final int vpi__tab_unselected_holo=0x7f02000a;
-        public static final int vpi__tab_unselected_pressed_holo=0x7f02000b;
+        public static final int checkbox=0x7f020000;
+        public static final int checkbox_out=0x7f020001;
+        public static final int checkinfo_checkbox_selector=0x7f020002;
+        public static final int empty_photo=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int selector_group=0x7f020005;
+        public static final int selector_item=0x7f020006;
+        public static final int splashpage=0x7f020007;
+        public static final int vpi__tab_indicator=0x7f020008;
+        public static final int vpi__tab_selected_focused_holo=0x7f020009;
+        public static final int vpi__tab_selected_holo=0x7f02000a;
+        public static final int vpi__tab_selected_pressed_holo=0x7f02000b;
+        public static final int vpi__tab_unselected_focused_holo=0x7f02000c;
+        public static final int vpi__tab_unselected_holo=0x7f02000d;
+        public static final int vpi__tab_unselected_pressed_holo=0x7f02000e;
     }
     public static final class id {
-        public static final int action_settings=0x7f040012;
+        public static final int action_settings=0x7f040016;
         public static final int bottom=0x7f040004;
+        public static final int checkBox=0x7f040011;
         public static final int child_image=0x7f040007;
         public static final int child_name=0x7f040008;
         public static final int container_id=0x7f040006;
-        public static final int content=0x7f04000e;
-        public static final int expandablelist=0x7f04000f;
+        public static final int content=0x7f040012;
+        public static final int expandablelist=0x7f040013;
         public static final int fgelv_tag_changed_visibility=0x7f040000;
         public static final int group_image=0x7f040009;
         public static final int group_name=0x7f04000a;
         public static final int image_splash=0x7f04000c;
-        public static final int indicator=0x7f040010;
+        public static final int indicator=0x7f040014;
+        public static final int loading_bar=0x7f040010;
+        public static final int lv_info=0x7f04000f;
         public static final int none=0x7f040001;
         public static final int number_count=0x7f04000b;
-        public static final int pager=0x7f040011;
+        public static final int pager=0x7f040015;
         public static final int top=0x7f040005;
         public static final int triangle=0x7f040002;
+        public static final int tv_device=0x7f04000e;
         public static final int tv_one=0x7f04000d;
         public static final int underline=0x7f040003;
     }
@@ -413,8 +422,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int device_group_layout=0x7f030002;
         public static final int dialog_splash=0x7f030003;
         public static final int fragment_dash_layout=0x7f030004;
-        public static final int fragment_device_layout=0x7f030005;
-        public static final int fragment_home_layout=0x7f030006;
+        public static final int fragment_device_check_info_layout=0x7f030005;
+        public static final int fragment_device_check_info_list_item_layout=0x7f030006;
+        public static final int fragment_device_layout=0x7f030007;
+        public static final int fragment_home_layout=0x7f030008;
     }
     public static final class menu {
         public static final int main=0x7f0b0000;
@@ -452,6 +463,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f090006;
+        public static final int CustomCheckboxTheme=0x7f09000b;
         public static final int TextAppearance_TabPageIndicator=0x7f090003;
         public static final int Theme_PageIndicatorDefaults=0x7f090000;
         public static final int Widget=0x7f090001;
