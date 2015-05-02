@@ -23,7 +23,7 @@ public abstract class BaseActivity extends FragmentActivity
 		super.onCreate(savedInstanceState);
 		
         ActionBar actionBar = getActionBar();
-//      actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
 	    actionBar.setHomeButtonEnabled(true);
 	    
 	    //初始化云端数据库bmob

@@ -4,14 +4,71 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/tv_one"
+    <RelativeLayout
+        android:id="@+id/layout_base_info"
+        android:layout_width="fill_parent"
+        android:layout_height="110dip"
+        android:padding="5dp" >
+
+    	<ImageView
+        android:id="@+id/img_person"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
-        android:layout_centerInParent="true"
-        android:text="dash page"
-        android:textSize="30sp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/empty_photo" />
 
+	    <TextView
+	        android:id="@+id/tv_name_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:textColor="#4D4D4D"
+	        android:textSize="18sp"
+	        android:layout_toRightOf="@+id/img_person"
+	        android:text="@string/name_label" />
+	
+	    <TextView
+	        android:id="@+id/tv_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/tv_name_label"
+	        android:text="张远平" />
+	
+	    <TextView
+	        android:id="@+id/tv_info_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#4D4D4D"
+	        android:textSize="18sp"
+	        android:layout_below="@+id/tv_name_label"
+	        android:layout_toRightOf="@+id/img_person"
+	        android:text="@string/info_label" />
+	
+	    <TextView
+	        android:id="@+id/tv_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/tv_info_label"
+	        android:layout_toRightOf="@+id/img_person"
+	        android:text="点检四部，点检高级组长" />
+        
+    </RelativeLayout>
+    
+    <View
+      android:layout_below="@+id/layout_base_info"
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="#FF909090" />
+
+    <Button
+        android:id="@+id/btn_scan_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/scan_code" />
 
 </RelativeLayout>

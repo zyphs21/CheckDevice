@@ -8,6 +8,6 @@ package com.diegocarloslima.fgelv.lib;
 
 public final class R {
 	public static final class id {
-		public static final int fgelv_tag_changed_visibility = 0x7f040000;
+		public static final int fgelv_tag_changed_visibility = 0x7f06000c;
 	}
 }
