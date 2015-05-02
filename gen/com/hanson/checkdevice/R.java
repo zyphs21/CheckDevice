@@ -330,6 +330,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int lucensy=0x7f05002d;
         public static final int orange=0x7f05002f;
         public static final int possible_result_points=0x7f050005;
+        public static final int press_before=0x7f05003b;
+        public static final int press_blue=0x7f05003a;
         public static final int red=0x7f050036;
         public static final int result_image_border=0x7f050006;
         public static final int result_minor_text=0x7f050007;
@@ -363,8 +365,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int vpi__bright_foreground_holo_light=0x7f05001e;
         public static final int vpi__bright_foreground_inverse_holo_dark=0x7f050021;
         public static final int vpi__bright_foreground_inverse_holo_light=0x7f050022;
-        public static final int vpi__dark_theme=0x7f05003a;
-        public static final int vpi__light_theme=0x7f05003b;
+        public static final int vpi__dark_theme=0x7f05003c;
+        public static final int vpi__light_theme=0x7f05003d;
         public static final int white=0x7f05002c;
     }
     public static final class dimen {
@@ -402,14 +404,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int navbar=0x7f020005;
         public static final int selector_group=0x7f020006;
         public static final int selector_item=0x7f020007;
-        public static final int splashpage=0x7f020008;
-        public static final int vpi__tab_indicator=0x7f020009;
-        public static final int vpi__tab_selected_focused_holo=0x7f02000a;
-        public static final int vpi__tab_selected_holo=0x7f02000b;
-        public static final int vpi__tab_selected_pressed_holo=0x7f02000c;
-        public static final int vpi__tab_unselected_focused_holo=0x7f02000d;
-        public static final int vpi__tab_unselected_holo=0x7f02000e;
-        public static final int vpi__tab_unselected_pressed_holo=0x7f02000f;
+        public static final int selector_scan_button=0x7f020008;
+        public static final int splashpage=0x7f020009;
+        public static final int vpi__tab_indicator=0x7f02000a;
+        public static final int vpi__tab_selected_focused_holo=0x7f02000b;
+        public static final int vpi__tab_selected_holo=0x7f02000c;
+        public static final int vpi__tab_selected_pressed_holo=0x7f02000d;
+        public static final int vpi__tab_unselected_focused_holo=0x7f02000e;
+        public static final int vpi__tab_unselected_holo=0x7f02000f;
+        public static final int vpi__tab_unselected_pressed_holo=0x7f020010;
     }
     public static final class id {
         public static final int action_settings=0x7f060030;
@@ -473,16 +476,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int camera=0x7f030001;
-        public static final int device_child_layout=0x7f030002;
-        public static final int device_group_layout=0x7f030003;
-        public static final int dialog_splash=0x7f030004;
-        public static final int fragment_dash_layout=0x7f030005;
-        public static final int fragment_device_check_info_layout=0x7f030006;
-        public static final int fragment_device_check_info_list_item_layout=0x7f030007;
-        public static final int fragment_device_layout=0x7f030008;
-        public static final int fragment_home_layout=0x7f030009;
-        public static final int main=0x7f03000a;
+        public static final int activity_splash=0x7f030001;
+        public static final int camera=0x7f030002;
+        public static final int device_child_layout=0x7f030003;
+        public static final int device_group_layout=0x7f030004;
+        public static final int dialog_splash=0x7f030005;
+        public static final int fragment_dash_layout=0x7f030006;
+        public static final int fragment_device_check_info_layout=0x7f030007;
+        public static final int fragment_device_check_info_list_item_layout=0x7f030008;
+        public static final int fragment_device_layout=0x7f030009;
+        public static final int fragment_home_layout=0x7f03000a;
+        public static final int main=0x7f03000b;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;

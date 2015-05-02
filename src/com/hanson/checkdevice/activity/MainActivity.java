@@ -13,13 +13,13 @@ import android.view.ViewGroup.LayoutParams;
 public class MainActivity extends BaseActivity {
 
 	private static final int DELAY_SPLASH = 2000;
-	private Dialog mSplashDialog;
-	private Handler mHandler = new Handler();
+//	private Dialog mSplashDialog;
+//	private Handler mHandler = new Handler();
 	
 	@Override
 	protected void onCheckDeviceCreate(Bundle savedInstanceState) {
 		setContentView(R.layout.activity_main);
-		initSplashDialog();
+		//initSplashDialog();
 		checkWhetherSetActionBarArrow();
 		navigationToFragment(new HomeFragment());
 	}
@@ -38,35 +38,36 @@ public class MainActivity extends BaseActivity {
 		return R.id.container_id;
 	}
 	
-	/**
-	 * 打开app看到的闪屏页面，用于展示logo
-	 */
-	private void initSplashDialog(){
-		mSplashDialog = new Dialog(this, R.style.full_screen_dialog) {
-			@Override
-			protected void onCreate(Bundle savedInstanceState) {
-				super.onCreate(savedInstanceState);
-				requestWindowFeature(Window.FEATURE_NO_TITLE);
-				getWindow().setLayout(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
-				setContentView(R.layout.dialog_splash);
-			}
-		};
-		
-		mSplashDialog.show();
-		mHandler.postDelayed(new Runnable() {
-			@Override
-			public void run() {
-				onSplashGone();
-			}
-		}, DELAY_SPLASH);
-		
-    }
-	
-	private void onSplashGone() {
-		mSplashDialog.dismiss();
-		//navigateToTabHostFragment(); OR
-		//navigateToSignUpFragment();
-	}
+	//这种方法没法做到全屏；
+//	/**
+//	 * 打开app看到的闪屏页面，用于展示logo
+//	 */
+//	private void initSplashDialog(){
+//		mSplashDialog = new Dialog(this, R.style.full_screen_dialog) {
+//			@Override
+//			protected void onCreate(Bundle savedInstanceState) {
+//				super.onCreate(savedInstanceState);
+//				requestWindowFeature(Window.FEATURE_NO_TITLE);
+//				getWindow().setLayout(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+//				setContentView(R.layout.dialog_splash);
+//			}
+//		};
+//		
+//		mSplashDialog.show();
+//		mHandler.postDelayed(new Runnable() {
+//			@Override
+//			public void run() {
+//				onSplashGone();
+//			}
+//		}, DELAY_SPLASH);
+//		
+//    }
+//	
+//	private void onSplashGone() {
+//		mSplashDialog.dismiss();
+//		//navigateToTabHostFragment(); OR
+//		//navigateToSignUpFragment();
+//	}
 
 	
 }

@@ -36,13 +36,21 @@
             android:value="1" />
         
         <activity
-            android:name="com.hanson.checkdevice.activity.MainActivity"
+            android:name="com.hanson.checkdevice.activity.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name="com.hanson.checkdevice.activity.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        
         
         <activity
             android:configChanges="orientation|keyboardHidden"
