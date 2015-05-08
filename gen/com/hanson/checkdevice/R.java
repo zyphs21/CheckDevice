@@ -304,10 +304,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int default_underline_indicator_fades=0x7f080004;
     }
     public static final class color {
-        public static final int Grey=0x7f050039;
+        public static final int Grey=0x7f05003a;
         public static final int LightGray=0x7f050034;
+        public static final int LightYellow=0x7f050035;
         public static final int alpha_00=0x7f050033;
-        public static final int background=0x7f050037;
+        public static final int background=0x7f050038;
         public static final int bg_color=0x7f050000;
         public static final int black=0x7f050031;
         public static final int blue=0x7f050030;
@@ -330,9 +331,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int lucensy=0x7f05002d;
         public static final int orange=0x7f05002f;
         public static final int possible_result_points=0x7f050005;
-        public static final int press_before=0x7f05003b;
-        public static final int press_blue=0x7f05003a;
-        public static final int red=0x7f050036;
+        public static final int press_before=0x7f05003c;
+        public static final int press_blue=0x7f05003b;
+        public static final int red=0x7f050037;
         public static final int result_image_border=0x7f050006;
         public static final int result_minor_text=0x7f050007;
         public static final int result_points=0x7f050008;
@@ -348,12 +349,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int share_view=0x7f050012;
         public static final int status_text=0x7f050014;
         public static final int status_view=0x7f050013;
-        public static final int trans=0x7f050035;
+        public static final int trans=0x7f050036;
         public static final int translucency=0x7f05002e;
         /**  <color name="red">#bf242a</color> 
          */
         public static final int transparent=0x7f050015;
-        public static final int transparent_background=0x7f050038;
+        public static final int transparent_background=0x7f050039;
         public static final int viewfinder_frame=0x7f050016;
         public static final int viewfinder_laser=0x7f050017;
         public static final int viewfinder_mask=0x7f050018;
@@ -365,8 +366,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int vpi__bright_foreground_holo_light=0x7f05001e;
         public static final int vpi__bright_foreground_inverse_holo_dark=0x7f050021;
         public static final int vpi__bright_foreground_inverse_holo_light=0x7f050022;
-        public static final int vpi__dark_theme=0x7f05003c;
-        public static final int vpi__light_theme=0x7f05003d;
+        public static final int vpi__dark_theme=0x7f05003d;
+        public static final int vpi__light_theme=0x7f05003e;
         public static final int white=0x7f05002c;
     }
     public static final class dimen {
@@ -415,47 +416,53 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int vpi__tab_unselected_pressed_holo=0x7f020010;
     }
     public static final class id {
-        public static final int action_settings=0x7f060030;
+        public static final int action_settings=0x7f060036;
         /**  Messages IDs 
          */
         public static final int auto_focus=0x7f060000;
         public static final int bottom=0x7f060010;
-        public static final int btn_add_qrcode=0x7f06002e;
+        public static final int btn_add_qrcode=0x7f060034;
         public static final int btn_cancel_scan=0x7f060015;
-        public static final int btn_scan_barcode=0x7f06002b;
+        public static final int btn_check=0x7f060026;
+        public static final int btn_scan_barcode=0x7f060031;
         public static final int btn_scan_code=0x7f060022;
-        public static final int checkBox=0x7f060026;
+        public static final int button1=0x7f060030;
+        public static final int checkBox=0x7f060027;
         public static final int child_image=0x7f060016;
         public static final int child_name=0x7f060017;
         public static final int container_id=0x7f060012;
-        public static final int content=0x7f060027;
+        public static final int content=0x7f060028;
         public static final int decode=0x7f060001;
         public static final int decode_failed=0x7f060002;
         public static final int decode_succeeded=0x7f060003;
+        public static final int editText1=0x7f06002d;
+        public static final int editText2=0x7f06002f;
         public static final int encode_failed=0x7f060004;
         public static final int encode_succeeded=0x7f060005;
-        public static final int et_qr_string=0x7f06002d;
-        public static final int expandablelist=0x7f060028;
+        public static final int et_qr_string=0x7f060033;
+        public static final int expandablelist=0x7f060029;
         public static final int fgelv_tag_changed_visibility=0x7f06000c;
         public static final int group_image=0x7f060018;
         public static final int group_name=0x7f060019;
         public static final int image_splash=0x7f06001b;
         public static final int img_person=0x7f06001d;
-        public static final int indicator=0x7f060029;
-        public static final int iv_qr_image=0x7f06002f;
+        public static final int indicator=0x7f06002a;
+        public static final int iv_qr_image=0x7f060035;
         public static final int launch_product_query=0x7f060006;
         public static final int layout_base_info=0x7f06001c;
         public static final int loading_bar=0x7f060025;
         public static final int lv_info=0x7f060024;
         public static final int none=0x7f06000d;
         public static final int number_count=0x7f06001a;
-        public static final int pager=0x7f06002a;
+        public static final int pager=0x7f06002b;
         public static final int preview_view=0x7f060013;
         public static final int quit=0x7f060007;
         public static final int restart_preview=0x7f060008;
         public static final int return_scan_result=0x7f060009;
         public static final int search_book_contents_failed=0x7f06000a;
         public static final int search_book_contents_succeeded=0x7f06000b;
+        public static final int textView1=0x7f06002c;
+        public static final int textView2=0x7f06002e;
         public static final int top=0x7f060011;
         public static final int triangle=0x7f06000e;
         public static final int tv_device=0x7f060023;
@@ -463,7 +470,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int tv_info_label=0x7f060020;
         public static final int tv_name=0x7f06001f;
         public static final int tv_name_label=0x7f06001e;
-        public static final int tv_scan_result=0x7f06002c;
+        public static final int tv_scan_result=0x7f060032;
         public static final int underline=0x7f06000f;
         public static final int viewfinder_view=0x7f060014;
     }
@@ -486,7 +493,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int fragment_device_check_info_list_item_layout=0x7f030008;
         public static final int fragment_device_layout=0x7f030009;
         public static final int fragment_home_layout=0x7f03000a;
-        public static final int main=0x7f03000b;
+        public static final int fragment_login_layout=0x7f03000b;
+        public static final int main=0x7f03000c;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -498,6 +506,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class string {
         public static final int action_settings=0x7f070003;
         public static final int app_name=0x7f070001;
+        public static final int btn_check=0x7f070007;
         public static final int hello=0x7f070000;
         public static final int hello_world=0x7f070002;
         public static final int info_label=0x7f070006;

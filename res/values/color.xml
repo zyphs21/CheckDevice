@@ -12,6 +12,7 @@
     <color name="light_orange">#fcb75c</color>
     <color name="alpha_00">#00000000</color>
     <color name="LightGray">#D3D3D3</color>
+    <color name="LightYellow">#EEEED1</color>
     <color name="trans">#50000000</color>
     <color name="red">#fe0202</color>
     <color name="background">#e5e5e5</color>

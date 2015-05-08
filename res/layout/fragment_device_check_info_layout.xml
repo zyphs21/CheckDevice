@@ -3,14 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background" xmlns:android1="http://schemas.android.com/apk/res/android">
+    android:background="@color/background">
     
     <TextView
-         android1:id="@+id/tv_device"
-         android1:layout_width="wrap_content"
-         android1:layout_height="wrap_content"
-         android1:layout_alignParentTop="true"
-         android1:layout_centerHorizontal="true"
+         android:id="@+id/tv_device"
+         android:layout_marginTop="7dp"
+         android:layout_marginBottom="6dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
          android:textColor="@color/light_orange"
 		 android:textSize="@dimen/check_device_name"/>
     
@@ -20,6 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
     
+    
+    
      <ProgressBar
         android:id="@+id/loading_bar"
         android:visibility="gone"
@@ -28,6 +32,12 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true" />
 
-     
+     <Button
+         android:id="@+id/btn_check"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:text="@string/btn_check" />
      
 </RelativeLayout>

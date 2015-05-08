@@ -50,6 +50,12 @@ public class DeviceFragment extends BaseFragment{
 		mWrapperAdapter = new WrapperExpandableListAdapter(mExListAdapter);
 		exListView.setAdapter(mWrapperAdapter);
 		
+		//默认显示都是展开的expandableListview
+		int count = exListView.getCount();
+		for(int i = 0; i < count; i++){
+			exListView.expandGroup(i);
+		}
+		
 		exListView.setOnChildClickListener(mOnChildClickListener);
 		
 		//将expandableListview箭头移动到右边的方法，但是失效了

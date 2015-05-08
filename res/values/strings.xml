@@ -9,4 +9,6 @@
     <string name="name_label">工人姓名：</string>
     <string name="info_label">基本信息：</string>
 
+    <string name="btn_check">确认点检</string>
+    
 </resources>
