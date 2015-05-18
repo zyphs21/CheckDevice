@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.meg7.widget.CustomShapeImageView
+        android:id="@+id/img_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head_profile" />
+
+    <TextView
+        android:id="@+id/label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/img_user"
+        android:layout_marginTop="21dp"
+        android:text="@string/name_label" />
+    
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/my_name" />
+    
+    <TextView
+        android:id="@+id/label_belong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/person_name"
+        android:layout_marginTop="7dp"
+        android:text="@string/label_belong" />
+    
+    <TextView
+        android:id="@+id/person_belong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_belong"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/my_name" />
+    
+    <TextView
+        android:id="@+id/label_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/person_belong"
+        android:layout_marginTop="7dp"
+        android:text="@string/label_gender" />
+    
+    <TextView
+        android:id="@+id/person_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_gender"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/my_name" />
+    
+    <TextView
+        android:id="@+id/label_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/person_gender"
+        android:layout_marginTop="7dp"
+        android:text="@string/info_label" />
+    
+    <TextView
+        android:id="@+id/person_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_position"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/person_position" />
+
+</RelativeLayout>

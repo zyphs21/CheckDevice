@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.Window;
+import cn.bmob.v3.BmobUser;
 
 import com.hanson.checkdevice.R;
 
@@ -32,9 +33,18 @@ public class SplashActivity extends Activity{
 		setContentView(R.layout.activity_splash);
 		mHandler.sendEmptyMessageDelayed(TO_HOME_PAGE, 2000);
 	};
+	
+	
 	public void toHome() {
-		Intent intent = new Intent(this, MainActivity.class);
-		startActivity(intent);
+		BmobUser bmobUser = BmobUser.getCurrentUser(this);
+		if(bmobUser != null){
+			Intent intent = new Intent(this, MainActivity.class);
+			startActivity(intent);
+		}else{
+			Intent intent = new Intent(this, LoginActivity.class);
+			startActivity(intent);
+		}
+		
 		this.finish();
 	}
 

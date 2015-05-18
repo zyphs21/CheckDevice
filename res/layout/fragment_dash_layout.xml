@@ -1,58 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <RelativeLayout
+   <RelativeLayout
         android:id="@+id/layout_base_info"
         android:layout_width="fill_parent"
-        android:layout_height="110dip"
-        android:padding="5dp" >
+        android:layout_height="125dip"
+        android:background="@drawable/profile_background">
+	
 
-    	<ImageView
-        android:id="@+id/img_person"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/empty_photo" />
-
-	    <TextView
-	        android:id="@+id/tv_name_label"
+       <com.meg7.widget.CustomShapeImageView
+            android:id="@+id/img_person"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_alignParentTop="true"
-	        android:textColor="#4D4D4D"
-	        android:textSize="18sp"
-	        android:layout_toRightOf="@+id/img_person"
-	        android:text="@string/name_label" />
-	
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginLeft="60dp"
+	        android:scaleType="centerCrop"
+	        android:src="@drawable/head_profile"
+	        app:shape="circle" />
+
 	    <TextView
 	        android:id="@+id/tv_name"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_alignParentTop="true"
-	        android:layout_toRightOf="@+id/tv_name_label"
-	        android:text="张远平" />
-	
+	        android:layout_toRightOf="@id/img_person"
+	        android:textSize="20sp"
+	        android:textColor="@color/black"
+	        android:layout_marginTop="30dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/my_name" />
+	    
 	    <TextView
-	        android:id="@+id/tv_info_label"
+	        android:id="@+id/tv_profile"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:textColor="#4D4D4D"
-	        android:textSize="18sp"
-	        android:layout_below="@+id/tv_name_label"
-	        android:layout_toRightOf="@+id/img_person"
-	        android:text="@string/info_label" />
-	
+	        android:layout_below="@id/tv_name"
+	        android:layout_toRightOf="@id/img_person"
+	        android:textColor="@color/orange"
+	        android:textSize="16sp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/personal_profile" />
+	    
 	    <TextView
-	        android:id="@+id/tv_info"
+	        android:id="@+id/tv_line"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/tv_info_label"
-	        android:layout_toRightOf="@+id/img_person"
-	        android:text="点检四部，点检高级组长" />
+	        android:layout_below="@id/tv_name"
+	        android:layout_toRightOf="@id/tv_profile"
+	        android:textSize="16sp"
+	        android:textColor="@color/Grey"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="|" />
+
+	    <TextView
+	        android:id="@+id/tv_account"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/tv_name"
+	        android:layout_toRightOf="@id/tv_line"
+	        android:textColor="@color/orange"
+	        android:textSize="16sp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/swich_account" />
+	    
         
     </RelativeLayout>
     
@@ -61,8 +79,59 @@
       android:layout_width="match_parent"
       android:layout_height="0.5dp"
       android:background="#FF909090" />
+    
+    <LinearLayout 
+        android:layout_marginTop="2dp"
+        android:id="@+id/button_layout"
+        android:layout_below="@+id/layout_base_info"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal">
+	    <Button 
+	        android:id="@+id/btn_scan_code"
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent" 
+			android:background="@drawable/scan_button"
+			android:text="@string/scan_code"
+			android:gravity="bottom"
+			android:layout_weight="1"/> 
+		<Button 
+		    android:id="@+id/btn_news"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent" 
+			android:background="@drawable/news_button"
+			android:gravity="bottom"
+			android:text="消 息"
+			android:layout_weight="1"/> 
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/button_layout2"
+        android:layout_below="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal">
+	    <Button 
+	        android:id="@+id/btn_contact"
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent" 
+			android:background="@drawable/contact_button"
+			android:gravity="bottom"
+			android:text="联系人"
+			android:layout_weight="1"/> 
+		<Button 
+		    android:id="@+id/btn_data"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent" 
+			android:background="@drawable/data_button"
+			android:gravity="bottom"
+			android:text="统 计"
+			android:layout_weight="1"/> 
+        
+    </LinearLayout>
 
-    <Button
+   <!--  <Button
         android:id="@+id/btn_scan_code"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
@@ -70,6 +139,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:text="@string/scan_code" />
+        android:text="@string/scan_code" /> -->
 
 </RelativeLayout>
