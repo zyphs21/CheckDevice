@@ -42,16 +42,16 @@ public final class R {
 	}
 	public static final class id {
 		public static final int auto_focus = 0x7f090000;
-		public static final int btn_add_qrcode = 0x7f09004b;
+		public static final int btn_add_qrcode = 0x7f09005f;
 		public static final int btn_cancel_scan = 0x7f090018;
-		public static final int btn_scan_barcode = 0x7f090048;
+		public static final int btn_scan_barcode = 0x7f09005c;
 		public static final int decode = 0x7f090001;
 		public static final int decode_failed = 0x7f090002;
 		public static final int decode_succeeded = 0x7f090003;
 		public static final int encode_failed = 0x7f090004;
 		public static final int encode_succeeded = 0x7f090005;
-		public static final int et_qr_string = 0x7f09004a;
-		public static final int iv_qr_image = 0x7f09004c;
+		public static final int et_qr_string = 0x7f09005e;
+		public static final int iv_qr_image = 0x7f090060;
 		public static final int launch_product_query = 0x7f090006;
 		public static final int preview_view = 0x7f090016;
 		public static final int quit = 0x7f090007;
@@ -59,12 +59,12 @@ public final class R {
 		public static final int return_scan_result = 0x7f090009;
 		public static final int search_book_contents_failed = 0x7f09000a;
 		public static final int search_book_contents_succeeded = 0x7f09000b;
-		public static final int tv_scan_result = 0x7f090049;
+		public static final int tv_scan_result = 0x7f09005d;
 		public static final int viewfinder_view = 0x7f090017;
 	}
 	public static final class layout {
 		public static final int camera = 0x7f030002;
-		public static final int main = 0x7f03000d;
+		public static final int main = 0x7f030010;
 	}
 	public static final class raw {
 		public static final int beep = 0x7f050000;

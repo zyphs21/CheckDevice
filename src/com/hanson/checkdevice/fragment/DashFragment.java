@@ -14,7 +14,10 @@ import com.zxing.activity.CaptureActivity;
 
 public class DashFragment extends BaseFragment
 {
-	private static Button scanQRCodeBtn;
+	private Button scanQRCodeBtn;
+	private Button contactBtn;
+	private Button dataBtn;
+	private Button newsBtn;
 	private TextView switchAccount;
 	private TextView userProfile;
 	private TextView userName;
@@ -28,13 +31,18 @@ public class DashFragment extends BaseFragment
 	protected void onCheckDeviceInitView() {
 		
 		scanQRCodeBtn = (Button)findViewById(R.id.btn_scan_code);
+		contactBtn = (Button)findViewById(R.id.btn_contact);
+		dataBtn = (Button)findViewById(R.id.btn_data);
+		newsBtn = (Button)findViewById(R.id.btn_news);
+		
 		switchAccount = (TextView)findViewById(R.id.tv_account);
 		userProfile = (TextView)findViewById(R.id.tv_profile);
 		userName = (TextView)findViewById(R.id.tv_name);
 		
+		
 		BmobUser bmobUser = BmobUser.getCurrentUser(getActivity());
 		String bmobUserName = bmobUser.getUsername();
-		if(bmobUserName == "zhang"){
+		if(bmobUserName.equals("zhang")){
 			userName.setText("张远平");
 		}else{
 			userName.setText(bmobUserName);
@@ -43,6 +51,9 @@ public class DashFragment extends BaseFragment
 		scanQRCodeBtn.setOnClickListener(mOnScanBtnClickListener);
 		switchAccount.setOnClickListener(mOnSwitchAccountClickListener);
 		userProfile.setOnClickListener(mOnUserProfileClickListener);
+		contactBtn.setOnClickListener(mOnContactClickListener);
+		dataBtn.setOnClickListener(mOnDateClickListener);
+		newsBtn.setOnClickListener(mOnNewsClickListener);
 	}
 
 	@Override
@@ -72,8 +83,28 @@ public class DashFragment extends BaseFragment
 	OnClickListener mOnUserProfileClickListener = new OnClickListener(){
 		@Override
 		public void onClick(View view) {
-			
+			getCurrentActivity().addFragment(UserProfileFragment.getUserProfileFragment());
+		}
+	};
+	
+	OnClickListener mOnContactClickListener = new OnClickListener() {
+		@Override
+		public void onClick(View v) {
+			getCurrentActivity().addFragment(ContactFragment.getContactFragment());
+		}
+	};
+	
+	OnClickListener mOnDateClickListener = new OnClickListener() {
+		@Override
+		public void onClick(View v) {
+			getCurrentActivity().addFragment(StatisticsFragment.getStatisticsFragment());
 		}
 	};
 
+	OnClickListener mOnNewsClickListener = new OnClickListener() {
+		@Override
+		public void onClick(View v) {
+			getCurrentActivity().addFragment(NewsFragment.getNewsFragment());
+		}
+	};
 }

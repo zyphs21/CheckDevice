@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bitmap_login" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="最新消息"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:background="@drawable/textview_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="公司资讯" />
+    
+    <View
+      android:id="@+id/view1"
+      android:layout_below="@+id/textView2"
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="#FF909090" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="  1.我司拿到美国苹果公司即将推出的iPhone6s一亿台订单，目前生产线正加紧部署与升级，为迎接iPhone的到来" />
+    
+    <View
+      android:id="@+id/view2"
+      android:layout_below="@+id/textView3"
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="#FF909090" />
+    
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view2"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="  2.我司拿到韩国三星公司即将推出的Galaxy7三亿台订单，目前生产线正加紧部署与升级，为迎接Samsung S7的到来" />
+    
+    <View
+      android:id="@+id/view3"
+      android:layout_below="@+id/textView4"
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="#FF909090" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view3"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="  3.我司拿到我国小米公司即将推出的小米5手机四亿台订单，目前生产线正加紧部署与升级，为迎接小米5的到来" />
+    
+    <View
+      android:id="@+id/view4"
+      android:layout_below="@+id/textView5"
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="#FF909090" />
+    
+    <TextView
+        android:id="@+id/textView6"
+        android:background="@drawable/textview_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view4"
+        android:text="生产线消息" />
+    
+    <View
+      android:id="@+id/view5"
+      android:layout_below="@+id/textView6"
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="#FF909090" />
+    
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view5"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="  1.我司为迎接新挑战，开设3D打印生产线，并引入五十台高级3D打印机" />
+    
+    <View
+      android:id="@+id/view6"
+      android:layout_below="@+id/textView7"
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="#FF909090" />
+    
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view6"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="  2.我司为迎接新挑战，总装线全线机械装备即日起全部更新，为实现更高自动化准备" />
+    
+    <View
+      android:id="@+id/view7"
+      android:layout_below="@+id/textView8"
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="#FF909090" />
+    
+</RelativeLayout>

@@ -16,8 +16,8 @@ import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.listener.SaveListener;
 
 import com.hanson.checkdevice.R;
-import com.hanson.checkdevice.view.InputMethodRelativeLayout.OnSizeChangedListenner;
 import com.hanson.checkdevice.view.InputMethodRelativeLayout;
+import com.hanson.checkdevice.view.InputMethodRelativeLayout.OnSizeChangedListenner;
 
 public class LoginActivity extends Activity implements OnSizeChangedListenner{
 

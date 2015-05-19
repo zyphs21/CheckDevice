@@ -14,6 +14,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnTouchListener;
+import android.widget.Toast;
 
 public abstract class BaseFragment extends Fragment
 {
@@ -72,6 +73,10 @@ public abstract class BaseFragment extends Fragment
 	protected MainActivity getCurrentActivity() {
 		return mCurrentActivity;
 	}
+	
+	protected void showToast(String msg){
+    	Toast.makeText(getActivity(), msg, Toast.LENGTH_SHORT).show();
+    }
 	
 	@Override
 	public void onStart() {
